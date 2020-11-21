@@ -1,0 +1,41 @@
+{
+  "coord": {
+    "lon": -106.65,
+    "lat": 35.08
+  },
+  "weather": [{
+    "id": 802,
+    "main": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n"
+  }],
+  "base": "stations",
+  "main": {
+    "temp": 54.18,
+    "feels_like": 41.54,
+    "temp_min": 51.01,
+    "temp_max": 57.2,
+    "pressure": 1026,
+    "humidity": 28
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 13.87,
+    "deg": 70
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1605936049,
+  "sys": {
+    "type": 1,
+    "id": 3205,
+    "country": "US",
+    "sunrise": 1605880012,
+    "sunset": 1605916694
+  },
+  "timezone": -25200,
+  "id": 5454711,
+  "name": "Albuquerque",
+  "cod": 200
+}
