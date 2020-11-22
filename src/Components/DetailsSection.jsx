@@ -14,11 +14,11 @@ function DetailsSection() {
     return {
       lon,
       lat,
-      temp_min: Math.round(temp_min),
-      temp_max: Math.round(temp_max),
+      "temp min": `${Math.round(temp_min)}º`,
+      "temp max": `${Math.round(temp_max)}º`,
       clouds: `${all}%`,
       humidity: `${humidity}%`,
-      wind_speed: speed,
+      "wind speed": speed,
       hPa: pressure,
     };
   }

@@ -6,7 +6,7 @@ function HeroSection() {
   const {
     name,
     weather,
-    main: { temp },
+    main: { temp, feels_like },
     sys: { country },
   } = useContext(WeatherContext);
   return (
