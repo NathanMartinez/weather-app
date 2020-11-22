@@ -1,0 +1,29 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+  background: $searchBar_background;
+  input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    -webkit-appearance: none;
+    &:focus {
+      border-bottom: 2px solid $blue;
+    }
+  }
+  &-buttons {
+    display: flex;
+    .SearchBar-icon {
+      color: #fff;
+      margin: 0 0.2rem;
+    }
+  }
+}

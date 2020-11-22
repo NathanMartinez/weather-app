@@ -1,0 +1,19 @@
+@import "./config";
+@import "./heroSection";
+@import "./detailsSection";
+@import "./searchBar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  height: 100vh;
+  background: $clear_background;
+  display: grid;
+  grid-template-rows: auto minmax(200px, auto) 70px;
+  grid-template-columns: 100%;
+  overflow: hidden;
+}

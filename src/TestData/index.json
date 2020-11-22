@@ -4,11 +4,18 @@
     "lat": 35.08
   },
   "weather": [{
-    "id": 802,
-    "main": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n"
-  }],
+      "id": 701,
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50d"
+    },
+    {
+      "id": 300,
+      "main": "Drizzle",
+      "description": "light intensity drizzle",
+      "icon": "09d"
+    }
+  ],
   "base": "stations",
   "main": {
     "temp": 54.18,

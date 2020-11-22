@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.HeroSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroSection .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.HeroSection .heading .location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HeroSection h1 {
+  color: #fff;
+  font-size: 15rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.HeroSection .weather-icons {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding-right: 2rem;
+}
+
+.HeroSection .weather-icons .weather-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroSection .weather-icons .weather-icon p {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1rem;
+  max-width: 50px;
+}
+
+.DetailsSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.DetailsSection .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DetailsSection .detail p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.SearchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.67);
+}
+
+.SearchBar input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  -webkit-appearance: none;
+}
+
+.SearchBar input:focus {
+  border-bottom: 2px solid #00d9ff;
+}
+
+.SearchBar-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SearchBar-buttons .SearchBar-icon {
+  color: #fff;
+  margin: 0 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29.17%, rgba(0, 194, 255, 0.73)), to(rgba(255, 255, 255, 0.21)));
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.73) 29.17%, rgba(255, 255, 255, 0.21) 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto minmax(200px, auto) 70px;
+      grid-template-rows: auto minmax(200px, auto) 70px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
