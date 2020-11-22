@@ -1,6 +1,6 @@
 const getWeatherData = async (location, setData) => {
   try {
-    await fetch(`http://localhost:5000/${location}`)
+    await fetch(`http://10.0.0.32:5000/${location}`)
       .then(res => res.json())
       .then(json => setData(json))
   } catch (error) {

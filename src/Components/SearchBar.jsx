@@ -14,6 +14,10 @@ function SearchBar() {
       setInputValue("");
     }
   };
+  const handleClick = (e) => {
+    getWeatherData(inputValue, setData);
+    setInputValue("");
+  };
   return (
     <div className="SearchBar">
       <input
@@ -23,7 +27,11 @@ function SearchBar() {
         onKeyDown={handleSubmit}
       />
       <div className="SearchBar-buttons">
-        <FaSearchLocation className="SearchBar-icon" size="1.2rem" />
+        <FaSearchLocation
+          className="SearchBar-icon"
+          size="1.2rem"
+          onClick={handleClick}
+        />
         <BsThreeDotsVertical className="SearchBar-icon" size="1.2rem" />
       </div>
     </div>
