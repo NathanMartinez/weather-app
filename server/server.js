@@ -11,15 +11,11 @@ const port = process.env.PORT || 5500
 // Import my function that brings in the API data
 const getWeatherData = require('./getWeatherData')
 
-
-app.get('/', function (req, res) {
-  res.send(`<h1>Welcome to Nathans Weather App Backend.</h1>
-  <p>It looks like you may be lost, please check your code and ensure you are sending me the proper request.</p>`)
-})
-
-app.get('/weather/:location', async function (req, res) {
-  let result = await getWeatherData(req.params.location)
-  res.send(result)
+app.get('/:location', async function (req, res) {
+  let result = await getWeatherData(req.params.location);
+  !result ? res.send({
+    data: 'No Result'
+  }) : res.send(result)
 })
 
 app.listen(port)
